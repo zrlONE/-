@@ -1,4 +1,4 @@
-package com.zrl.reggie.cotroller;
+package com.zrl.reggie.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
@@ -8,21 +8,14 @@ import com.zrl.reggie.dto.DishDto;
 import com.zrl.reggie.entity.Category;
 import com.zrl.reggie.entity.Dish;
 import com.zrl.reggie.entity.DishFlavor;
-import com.zrl.reggie.entity.Setmeal;
 import com.zrl.reggie.service.CategoryService;
 import com.zrl.reggie.service.DishFlavorService;
 import com.zrl.reggie.service.DishService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileInputStream;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;

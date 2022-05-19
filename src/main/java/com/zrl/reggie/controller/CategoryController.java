@@ -1,4 +1,4 @@
-package com.zrl.reggie.cotroller;
+package com.zrl.reggie.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

@@ -34,13 +34,18 @@ public class LoginCheckFilter implements Filter {
 
         //1、获取本次请求的URI
         String RequestURI = request.getRequestURI();
+        //定义不需要处理的路径
         String[] urls = new String[]{
                 "/employee/login",
                 "/employee/logout",
                 "/backend/**",
                 "/front/**",
                 "/user/sendMsg",
-                "/user/login"
+                "/user/login",
+                "/doc.html",
+                "/webjars/**",
+                "/swagger-resources",
+                "/v2/api-docs"
         };
         //2、判断本次请求是否需要处理
         Boolean check = check(urls, RequestURI);

@@ -1,4 +1,4 @@
-package com.zrl.reggie.cotroller;
+package com.zrl.reggie.controller;
 
 import com.zrl.reggie.common.R;
 import com.zrl.reggie.entity.Orders;

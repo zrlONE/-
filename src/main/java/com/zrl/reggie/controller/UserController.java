@@ -1,10 +1,9 @@
-package com.zrl.reggie.cotroller;
+package com.zrl.reggie.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.zrl.reggie.common.R;
 import com.zrl.reggie.entity.User;
 import com.zrl.reggie.service.UserService;
-import com.zrl.reggie.utils.SMSUtils;
 import com.zrl.reggie.utils.ValidateCodeUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
